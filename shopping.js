@@ -9,6 +9,7 @@ var dateTime = date+' '+time;
          item: "Milk",
          price: 4.99,
          id: 1,
+     },    
      {
          item: "Eggs",
          price: 1.99,
@@ -88,3 +89,10 @@ var dateTime = date+' '+time;
       addToShoppingList(crab)
 
       console.log(shoppingList)
+
+
+      for (item of shoppingList) {
+          if (item.price >= 8) {
+              console.log(`You have an expensive item on your list. It's the ${item.name} and it's price is ${item.price}.`)
+          }
+      }
